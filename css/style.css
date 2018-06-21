@@ -1,0 +1,52 @@
+nav{
+  z-index: 10;
+
+  padding: 0px 50px;
+  position: fixed;
+  background-color: rgba(0,0,0,0);
+}
+#header{
+  width: auto;
+  height: 800px;
+background-image: url(https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png);
+box-shadow: 2px 5px 10px black;
+z-index: 10;
+
+
+}
+nav li:hover{
+  background-color: orange;
+}
+#about{
+
+
+  height: 1300px;
+  z-index: 3;
+}
+.line{
+  width: 250px;
+  height: 1px;
+  background-color: black;
+  border:1px solid black;
+  border-radius: 10%;
+}
+.skil{
+  margin-top:100px;
+}
+body{
+    background-color: #DEDCDB;
+}
+.card-body{
+  height: 650px;
+}
+#portofolio{
+  height: 1300px;
+  background-color: white;
+}
+.line1{
+  width: 350px;
+  height: 1px;
+  background-color: black;
+  border:1px solid black;
+  border-radius: 10%;
+}
