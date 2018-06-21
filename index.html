@@ -5,7 +5,7 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
 
@@ -133,6 +133,42 @@
 
 </section>
 
+<!-- footer -->
+<footer class="page-footer black">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Social Media</h5>
+        <br>
+        <div class="row">
+          <div class="col m1">
+            <a href="https://www.instagram.com/hajid_alakhtar/"> <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c521.png" width="40px;" ></a>
+          </div>
+          <div class="col m1">
+            <a href="https://www.facebook.com/hajid.alakhtar"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1000px-F_icon.svg.png" width="40px;" style="margin-left:10px;"></a>
+          </div>
+          <div class="col m1">
+            <a href="https://steamcommunity.com/id/hajidalakhtar"> <img src="https://s3.amazonaws.com/freebiesupply/large/2x/steam-logo-black-transparent.png" width="40px;" style="margin-left:25px;"></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Framework </h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://materializecss.com/">Materialize</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2018 Copyright Text | DJUANDA
+
+    </div>
+  </div>
+</footer>
 
 
 
@@ -146,30 +182,29 @@
 
 
 <script type="text/javascript">
+  $(document).ready(function() {
 
-$(document).ready(function(){
-
-  $("a").on('click', function(event) {
-
-
-    if (this.hash !== "") {
-
-      event.preventDefault();
+    $("a").on('click', function(event) {
 
 
-      var hash = this.hash;
+      if (this.hash !== "") {
+
+        event.preventDefault();
 
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 750, function(){
+        var hash = this.hash;
 
 
-        window.location.hash = hash;
-      });
-    }
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 700, function() {
+
+
+          window.location.hash = hash;
+        });
+      }
+    });
   });
-});
 
 
 
@@ -187,8 +222,6 @@ $(document).ready(function(){
     })
 
   });
-
-
 </script>
 
 </html>
