@@ -1614,6 +1614,7 @@
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
+
 }
 
 @-webkit-keyframes fadeOutDown {
