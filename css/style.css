@@ -24,7 +24,7 @@ nav li:hover{
   z-index: 3;
 }
 .line{
-  width: 250px;
+  width: 18%;
   height: 1px;
   background-color: black;
   border:1px solid black;
