@@ -45,8 +45,8 @@
       <div class="center" >
          <a href="#about">  <i class="medium material-icons animated bounce infinite" style="margin-top:100px; color:black; " >arrow_downward</i> </a>
       </div>
-      <div class="atas hide"style="margin-left:1280px; margin-top:60px; position:fixed" >
-        <a href="#header"> <i class="medium material-icons"style="color:black">keyboard_arrow_up</i></a> 
+      <div class="atas hide"style="margin-left:1280px; margin-top:60px; position:fixed; padding-bottom:10px;" >
+        <a href="#header"> <i class="medium material-icons"style="color:black; padding-top:10px;">keyboard_arrow_up</i></a>
       </div>
 
 
@@ -255,6 +255,23 @@
     })
 
   });
+
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 1500) {
+        $(".atas").addClass("white");
+
+
+      } else {
+
+$(".atas").removeClass("white");
+
+
+      }
+    })
+
+  });
+
 
   new WOW().init();
 </script>
