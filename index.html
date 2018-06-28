@@ -19,7 +19,7 @@
   <!-- Dropdown Structure -->
   <nav class="z-depth-0 ">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo" style="font-family: 'Monoton', cursive; font-size:40px;">  Hajid</a>
+      <a href="#header" class="brand-logo" style="font-family: 'Monoton', cursive; font-size:40px;">  Hajid</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#header" style="font-size:20px;"><b>HOME</b></a></li>
@@ -158,11 +158,11 @@
       <div class="col m4">
         <h1 style="font-family: 'Monoton'; font-size: 45px; margin-top:150px;">WARTEG</h1>
         <p>Warteg adalah sebuah website yang di buat untuk sebuah rumah makan di deket sekolah yang berkelas tetapi murah namun nikmat</p>
-        <a href="https://hajidalakhtar.github.io/warteg/" class="waves-effect waves-light btn blue">LIHAT</a>
+        <a href="https://hajidalakhtar.github.io/warteg/" class="waves-effect waves-light btn blue btn1">LIHAT</a>
       </div>
     </div>
     <div class="col m6">
-      <img src="warteg.jpg" width="500px;" style=" margin-left:130px; border-radius:1%; margin-top:100px;">
+      <img src="warteg.jpg" width="500px;" style=" margin-left:130px; border-radius:1%; margin-top:100px;" class="warteg">
 
     </div>
   </div>
@@ -170,14 +170,14 @@
   <div class="row" style="margin-top:50px;">
 
     <div class="col m6">
-      <img src="vpn.jpg" width="500px;" style=" margin-left:100px; border-radius:1%; margin-top:100px;">
+      <img src="vpn.jpg" width="500px;" style=" margin-left:100px; border-radius:1%; margin-top:100px;" class="vpn">
 
     </div>
     <div class="col m3">
       <h1 style=" font-size: 45px; margin-top:150px; color:#FF533F">Touch VPN</h1>
       <p>Touch VPN yang saya buat bukan website aslinya inih hanyalan sebuah website yang saya buat untuk belajar </p>
 
-      <a href="https://hajidalakhtar.github.io/VPNWEB/" class="waves-effect waves-light btn orange">LIHAT</a>
+      <a href="https://hajidalakhtar.github.io/VPNWEB/" class="waves-effect waves-light btn orange btn2">LIHAT</a>
     </div>
 
 
@@ -238,6 +238,7 @@
 
 
 <script type="text/javascript">
+
   $(document).ready(function() {
 
     $("a").on('click', function(event) {
@@ -319,9 +320,52 @@ $(".atas").removeClass("white");
     })
 
   });
+  $(document).ready(function() {
+    $(".btn1").mouseenter(function() {
+      $(".warteg").addClass("infinite animated bounce")
+
+    });
+    $(".btn1").mouseleave(function() {
+      $(".warteg").removeClass("infinite animated bounce")
+
+    });
+
+
+
+
+  });
+
+  $(document).ready(function() {
+    $(".btn2").mouseenter(function() {
+      $(".vpn").addClass("infinite animated bounce")
+
+    });
+    $(".btn2").mouseleave(function() {
+      $(".vpn").removeClass("infinite animated bounce")
+
+    });
+
+
+
+
+  });
+
+
+
+
+
+
+
 
 
 new WOW().init();
+
+
+
+
+
+
+
 </script>
 
 </html>
